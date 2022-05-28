@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&:weght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    /* background-color: #eee; */
+    background-color: #e5e4e4;
+} 
+
+.mainContenter{
+    width: 500px;
+    margin: auto;    
+}
+
+body h1{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.wrapper{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btnContainer{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+}
+
+.btnContainer button{
+    margin: 0.5rem 0;
+    padding: 0.4rem 0.6rem;
+    font-weight:bold;
+    font-size: 0.6rem;
+    background-color: #f9f9f9;
+    border: 0.01rem solid #333;
+    border-radius: 0.3rem;
+}
+
+.btnContainer button span{
+    margin-left: 0.3rem;
+    font-size: 0.7rem;
+}
+
+.verticalLine{
+    border: 0.01rem solid #aaa;
+    /* height: 300px; */
+}
+.horizontalLine {
+    border: 0.0001rem solid #aaa;
+    width: 275px;
+}
+
+.displayTitle{
+    margin: 1rem 0 0.5rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-weight:bolder;
+    font-size: 1.3rem;
+}
+
+.displayData{
+    margin: 0.3rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.displayUser{
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+}
+
+.displayUser div span:nth-child(1){
+    font-weight: bold;
+}
+
+/* the new created div element containing the username & wealth amount */
+.displayUser.displayUser div{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* the total wealth raw styling -- dynamically */
+.totalWealth{
+    font-weight: bold;
+    padding : 0.3rem 0 0.3rem 0;
+    margin : 0.5rem 0 0 0;
+    background-color : #fbf7f5;
+    border-bottom : 0.1rem solid #aaa;
+}
